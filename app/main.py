@@ -1,5 +1,9 @@
+import os
 import streamlit as st
+import sys
 from src.chatbot.rag_chatbot import ChatBot
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
 st.set_page_config(page_title="Customer Support Chatbot")
 st.title("📘 Customer Support RAG Chatbot")
